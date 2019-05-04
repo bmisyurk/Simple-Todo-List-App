@@ -10,7 +10,7 @@ function removeTask(el) {
             items.splice(index, 1);
         }
         allTasks.innerHTML = tasks.allTasks;
-        doneTasks.innerHTML = tasks.doneTasks;
+        doneTasks.innerHTML = tasks.allTasks;
     }
 
     function addTasks(str) {
