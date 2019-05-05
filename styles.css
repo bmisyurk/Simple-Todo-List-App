@@ -60,19 +60,24 @@ input {
     float: left;
     font-size: 16px;
     border-radius: 10px;
+    width: 84%;
+    border-radius: 5px;
+    border:1px solid #4096ee;
 }
+
 .addBtn {
-    padding: 10px;
-    width: 20%;
-    background: #f2ef30;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 15px;
-    margin-left: 8px;
+  padding: 10px;
+  width: 10%;
+  background: #f2ef30;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-left: 8px;
+  border: 1px solid #4096ee;
 }
 .addBtn:hover {
     background-color: #baef51;
@@ -113,30 +118,8 @@ input {
     display: table;
     clear: both;
 }
-input {
-    margin: 0;
-    border: none;
-    width: 84%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-    border-radius: 5px;
-    border:1px solid #4096ee;
-}
-.addBtn {
-    padding: 10px;
-    width: 10%;
-    background: #f2ef30;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
-    margin-left: 8px;
-    border: 1px solid #4096ee;
-}
+
+
 .addBtn:hover {
     background-color: #baef51;
 }
@@ -148,15 +131,7 @@ select.selectBox {
     width: 18px;
     border: 1px solid #4096ee;
     float: left;
-}
-
-option.selected {
-    width:40px;
-    text-indent:20px;
-    border:1px solid #4096ee;
-    border-right:none;
-    background: white;
-    overflow:hidden;
+    border-radius: 5px;
 }
 
 select.selectOptions {
