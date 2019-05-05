@@ -30,6 +30,21 @@ list.addEventListener('click', function(ev) {
 // Create a new list item when clicking on the "Add" button
 function newElement() {
     var li = document.createElement("li");
+
+
+
+
+    if (document.getElementsByClassName('selectBox')[0].value === "1")
+        li.className = "colorR";
+    else if (document.getElementsByClassName('selectBox')[0].value === "2")
+        li.className = "colorG";
+    else
+        li.className = "colorW";
+
+
+
+
+
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
@@ -37,6 +52,7 @@ function newElement() {
         alert("You must write something!");
     } else {
         document.getElementById("myUL").appendChild(li);
+
     }
     document.getElementById("myInput").value = "";
 

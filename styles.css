@@ -1,28 +1,16 @@
-@media screen and (max-width: 100%) {
-    table {
-        overflow-x: auto;
-    }
-}
-* {
-    box-sizing: border-box;
-}
-body{
-    zoom:100%;
-}
-html, body{
-    font-size: 2vw;
-}
-h1 {
-    font-size: 3vw;
-}
+* {box-sizing: border-box;}
+
+body{zoom:100%;}
 
 ul {
-    margin: 0;
+    margin: ;
     padding: 0;
 }
 li{
+    margin: 5px 0 5px 0;
     margin-left: 250px;
     margin-right: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
 ul li {
@@ -37,9 +25,7 @@ ul li {
     user-select: none;
     word-wrap: break-word;
 }
-ul li:nth-child(2n+1) {
-    background: #f9f9f9;
-}
+
 ul li:last-child {
     border-radius: 0 0 0.5em 0.5em;
 }
@@ -68,14 +54,14 @@ ul li.checked::before {
     background-color: #f44336;
     color: white;
 }
-.header {
-    border-radius: 0.5em 0.5em 0 0;
-    background-color: #15b1ea;
-    padding: 30px 40px;
-    margin: 20px 250px 0 250px;
-    color: white;
-    text-align: center;
-}
+/*.header {*/
+/*    border-radius: 0.5em 0.5em 0 0;*/
+/*    background-color: #15b1ea;*/
+/*    padding: 30px 40px;*/
+/*    margin: 20px 250px 0 250px;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*}*/
 .header:after {
     content: "";
     display: table;
@@ -106,4 +92,176 @@ input {
 }
 .addBtn:hover {
     background-color: #baef51;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin-left: 250px;
+    margin-right: 250px;
+
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 60px 12px 60px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 23px;
+    font-family: monospace;
+    transition: 0.1s;
+    user-select: none;
+    word-wrap: break-word;
+}
+
+ul li:last-child {
+    border-radius: 0 0 0.5em 0.5em;
+}
+ul li:hover {
+    background: #ddd;
+}
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: "\2714";
+    position: absolute;
+    left: 16px;
+}
+
+.colorR {
+    background-color: #f44336;
+    color: white;
+}
+.colorR:hover {
+    background-color: #ff7b2c;
+}
+.colorG { background-color: #24b70a; }
+.colorW { background-color: rgba(177, 188, 207, 0.52); }
+
+.close {
+    cursor: not-allowed;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+.header {
+    border-radius: 0.5em 0.5em 0 0;
+    background-color: #15b1ea;
+    padding: 30px 40px;
+    margin: 20px 250px 0 250px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input {
+    margin: 0;
+    border: none;
+    width: 84%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-radius: 5px;
+    border:1px solid #4096ee;
+}
+.addBtn {
+    padding: 10px;
+    width: 10%;
+    background: #f2ef30;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-left: 8px;
+    border: 1px solid #4096ee;
+}
+.addBtn:hover {
+    background-color: #baef51;
+}
+
+select.selectBox {
+    cursor: default;
+    color: #888;
+    height: 40px;
+    width: 18px;
+    border: 1px solid #4096ee;
+    float: left;
+}
+
+option.selected {
+    width:40px;
+    text-indent:20px;
+    border:1px solid #4096ee;
+    border-right:none;
+    background: white;
+    overflow:hidden;
+}
+
+select.selectOptions {
+    position:absolute;
+    top:28px;
+    left:0;
+    width:40px;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    overflow:hidden;
+    padding-top:2px;
+    display:none;
+    overflow-y: hidden;
+}
+
+option.selectOption {
+    display:block;
+    height:40px;
+    padding:5px 10%;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .header{
+        margin: 0;
+        width: 100%;
+    }
+    li{
+        margin: 0;
+        width: 100%;
+    }
+    body {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    input#myInput {
+        width: 93%;
+    }
+    span.addBtn{
+        margin: 0;
+        clear: both;
+        width: 99%;
+    }
+    li{
+        margin: 0;
+        width: 100%;
+    }
+
 }
