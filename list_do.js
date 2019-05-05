@@ -34,12 +34,12 @@ function newElement() {
 
 
 
-    if (document.getElementsByClassName('selectBox')[0].value === "1")
-        li.className = "colorR";
-    else if (document.getElementsByClassName('selectBox')[0].value === "2")
-        li.className = "colorG";
-    else
+    if (document.getElementsByClassName('selectBox')[0].value === "3")
         li.className = "colorW";
+    else if (document.getElementsByClassName('selectBox')[0].value === "2")
+        li.className = "colorY";
+    else
+        li.className = "colorR";
 
 
 

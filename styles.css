@@ -138,11 +138,13 @@ ul li.checked::before {
     background-color: #f44336;
     color: white;
 }
+.colorY { background-color: #faff3f;}
+.colorW {background-color: rgba(177, 188, 207, 0.52);}
+
 .colorR:hover {
     background-color: #ff7b2c;
 }
-.colorG { background-color: #24b70a; }
-.colorW { background-color: rgba(177, 188, 207, 0.52); }
+
 
 .close {
     cursor: not-allowed;
