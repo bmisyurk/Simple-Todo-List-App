@@ -27,10 +27,11 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 
-// Create colors for prioritets
+
 function newElement() {
     var li = document.createElement("li");
- if (document.getElementsByClassName('selectBox')[0].value === "3")
+    // Create colors for prioritets
+    if (document.getElementsByClassName('selectBox')[0].value === "3")
         li.className = "colorW";
     else if (document.getElementsByClassName('selectBox')[0].value === "2")
         li.className = "colorY";
@@ -65,6 +66,13 @@ function newElement() {
     }
 }
 
+(function enter() {
+    document.querySelector('input').addEventListener('keydown', function(e) {
+        if (e.keyCode === 13) {
+            newElement();
+        }
+    });
+})();
 
 
 
