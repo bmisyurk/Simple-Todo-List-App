@@ -20,11 +20,12 @@
 </div>
 <ul id="myUL">
     <li>Go to the gym</li>
-    <li class="checked">Pass exam </li>
+    <li class="checked">Pass exam</li>
     <li>Buy presents</li>
-    <li class="checked">Go sleep before 10:00pm. </li>
+    <li class="checked">Go sleep earlier </li>
 </ul>
 <script src="list_do.js"></script>
+
 
 </body>
 </html>
