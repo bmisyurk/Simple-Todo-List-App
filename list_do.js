@@ -82,5 +82,3 @@ list.addEventListener('click', function(ev) {
 
 
 
-
-

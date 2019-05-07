@@ -16,3 +16,33 @@ function del_li() {                                    // Delete all list
         element.removeChild(element.firstChild);
     }
 }
+
+
+
+function checkedAll() {
+    var ch = document.getElementById('check');
+    {
+        if (ch.checked)
+        {
+            var i = 0;
+            var select = document.getElementsByTagName("li");
+            while (select[i])
+            {
+                select[i].classList.add('checked');
+                i++;
+            }
+
+        }
+        else
+        {
+            var i = 0;
+            var select = document.getElementsByTagName("li");
+            while (select[i])
+            {
+                select[i].classList.remove("checked");
+                i++;
+            }
+        }
+    }
+
+}

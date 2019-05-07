@@ -6,25 +6,27 @@
     <link  href="styles.css" rel="stylesheet">
 
 </head>
-<body>
-<div id="myDIV" class="header">
+<body bgcolor="#baef51">
+<div class="header">
     <h1 style="margin:-14px 0 10px 0">To Do List</h1>
-    <input type="text" id="myInput" placeholder="Enter task..."autofocus>
+    <input rel="text" type="text" class="text" id="myInput" placeholder="Enter task..."autofocus>
     <select class="selectBox">
-            <option id="1" class="selectOption" value="3">Priority: 3</option>
-            <option id="2" class="selectOption" value="2">Priority: 2</option>
-            <option id="3" class="selectOption" value="1">Priority: 1</option>
+        <option id="1" class="selectOption" value="3">Priority: 3</option>
+        <option id="2" class="selectOption" value="2">Priority: 2</option>
+        <option id="3" class="selectOption" value="1">Priority: 1</option>
     </select>
     <span onclick="newElement()" class="addBtn">Add</span>
 </div>
+<div class="footer">
+    <p><input rel="checkbox" id="check" type="checkbox" value="all" onclick="checkedAll()">All</p>
+    <select class="selectSort">
+        <option id="1" class="selectOption" value="3">priority</option>
+        <option id="2" class="selectOption" value="2">action</option>
+        <option id="3" class="selectOption" value="1">time</option>
+    </select>
+</div>
 <div class="button"></div>              <!--on timer-->
-<ul id="myUL">
-    <li>Go to the gym</li>
-    <li class="checked">Pass exam </li>
-    <li>Buy presents</li>
-
-    <li class="checked">Go sleep before 10:00pm. </li>
-</ul>
+<ul id="myUL"></ul>
 
 <script src="list_do.js"></script>
 <script src="timer.js"></script>
