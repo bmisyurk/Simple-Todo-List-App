@@ -1,5 +1,6 @@
 function newElement() {
-                                             // Create a new list item when clicking on the "Add" button
+
+    // Create a new list item when clicking on the "Add" button
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
@@ -13,12 +14,11 @@ function newElement() {
         li.className = "colorR";
     if (inputValue === '') {
         alert("You must write something!");
-    }
-    else {
+    } else {
         document.getElementById("myUL").appendChild(li);
     }
     document.getElementById("myInput").value = "";
-                                             // X  - mark on out list(default html)
+    // X  - mark on out list(default html)
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
@@ -26,13 +26,20 @@ function newElement() {
     li.appendChild(span);
 
     for (i = 0; i < close.length; i++) {
-                                             //delete li on click "X"(default html)
+        //delete li on click "X"(default html)
         close[i].onclick = function () {
+            var seconds = 1;
             var div = this.parentElement;
-            div.style.display = "none";
+            div.style.transition = "opacity " + seconds + "s ease";
+            div.style.opacity = 0;
+            setTimeout(function () {
+                div.parentNode.removeChild(div);
+            }, 500);
         }
     }
 }
+
+
 
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -49,10 +56,16 @@ var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
                                              //delete li on click "X"(will be create)
-    close[i].onclick = function() {
+    close[i].onclick = function () {
+        var seconds = 1;
         var div = this.parentElement;
-        div.style.display = "none";
+        div.style.transition = "opacity " + seconds + "s ease";
+        div.style.opacity = 0;
+        setTimeout(function () {
+            div.parentNode.removeChild(div);
+        }, 500);
     }
+
 }
 
                                              // Add a "checked" symbol when clicking on a list item
@@ -71,14 +84,4 @@ list.addEventListener('click', function(ev) {
         }
     });
 })();
-
-
-
-
-
-
-
-
-
-
 

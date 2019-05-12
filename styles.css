@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 
 body{zoom:100%;}
-
+html{overflow-x: hidden;}
 ul {
     margin: 0;
     padding: 0;
@@ -25,7 +25,6 @@ ul li {
     user-select: none;
     word-wrap: break-word;
 }
-
 ul li:last-child {
     border-radius: 0 0 0.5em 0.5em;
 }
@@ -79,20 +78,39 @@ input[rel=text] {
     margin-left: 8px;
     border: 2px solid rgba(255, 255, 255, 0.92);
 }
-.del_li {
-    padding-left: 17px;
-    width: 60px;
-    background: #f2451b;
-    color: #ffffff;
-    float: right;
-    text-align: start;
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
-    margin-right: 133px;
-    border: 1px solid rgba(255, 255, 255, 0.92);
+#button {
+    height: 100px;
+    position: absolute;
+    margin-top: -22px;
+    margin-left: 793px;
+
 }
+
+#del_li {
+    height: 63px;
+    width: 48px;
+    float: right;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+/*@keyframes bounce {*/
+/*    0%{*/
+/*        transform: translateY(0);*/
+/*        transform: translateY(0);*/
+/*    }*/
+
+/*    40% {*/
+/*        transform: translateY(-400px);*/
+/*    }*/
+
+/*    80% {*/
+/*        transform: translateY(-20px);*/
+/*        transform: translateY(-20px);*/
+/*    }*/
+/*}*/
+
 .clr{
     width: 79px;
     padding-left: 21px;
@@ -101,8 +119,21 @@ input[rel=text] {
     text-align: center;
     font-size: 16px;
 }
-.del_li:hover { background-color: #eaefb8; }
-.addBtn:hover { background-color: #ef8311; }
+@keyframes btn {
+    to {
+        background-color: #ff9c29;
+    }
+}
+
+.del_li:hover {background-color: rgba(255, 139, 124, 0.89);}
+
+.addBtn:hover{
+    border-radius: 35%;
+    border: 2px solid #0317d3;
+    animation: btn 1s;
+}
+
+
 .colorY { background-color: #faff3f;}
 .colorW {background-color: #eee;}
 .colorR {
@@ -133,6 +164,8 @@ input[rel=text] {
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+
 
 .header:after {
     content: "";
@@ -199,11 +232,7 @@ select.selectOptions {
         margin: 0;
         width: 100%;
     }
-    .del_li{
-        margin-top: -133px;
-        margin-right: 0px;
-        clear:both;
-    }
+
     li{
         margin: 0;
         width: 100%;
@@ -226,15 +255,6 @@ select.selectOptions {
     li{
         margin: 0;
         width: 100%;
-    }
-    .del_li {
-        border: 0px solid;
-        background: none;
-        width: 13%;
-        margin-top: -173px;
-        clear: both;
-        font-size: 8vw;
-        margin-right: -2px;
     }
     .clr{
         display: none;

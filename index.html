@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
     <link  href="styles.css" rel="stylesheet">
-
+    <script src="https://js.cx/libs/animate.js"></script>
 </head>
 <body bgcolor="#baef51">
 <div class="header">
     <h1 style="margin:-14px 0 10px 0">To Do List</h1>
+
     <input rel="text" type="text" class="text" id="myInput" placeholder="Enter task..."autofocus>
     <select class="selectBox">
         <option id="1" class="selectOption" value="3">Priority: 3</option>
@@ -16,7 +17,12 @@
         <option id="3" class="selectOption" value="1">Priority: 1</option>
     </select>
     <span onclick="newElement()" class="addBtn">Add</span>
+    <div id="button">
+        <img src=images/del.svg width="40" height="40" id="del_li" onclick="del_lii()">
+    </div>
+
 </div>
+
 <div class="footer">
     <p><input rel="checkbox" id="check" type="checkbox" value="all" onclick="checkedAll()">All</p>
     <select class="selectSort">
@@ -25,8 +31,13 @@
         <option id="3" class="selectOption" value="1">time</option>
     </select>
 </div>
-<div class="button"></div>              <!--on timer-->
-<ul id="myUL"></ul>
+           <!--on timer-->
+<ul id="myUL">
+<li>Go to the gym</li>
+<li class="checked">Pass exam </li>
+<li>Buy presents</li>
+<li class="checked">Go sleep before 10:00pm. </li>
+</ul>
 
 <script src="list_do.js"></script>
 <script src="timer.js"></script>
