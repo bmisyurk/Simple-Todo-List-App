@@ -81,35 +81,16 @@ input[rel=text] {
 #button {
     height: 100px;
     position: absolute;
-    margin-top: -22px;
-    margin-left: 793px;
-
+    top: 61px;
 }
 
 #del_li {
     height: 63px;
     width: 48px;
-    float: right;
     position: absolute;
     cursor: pointer;
 
 }
-
-/*@keyframes bounce {*/
-/*    0%{*/
-/*        transform: translateY(0);*/
-/*        transform: translateY(0);*/
-/*    }*/
-
-/*    40% {*/
-/*        transform: translateY(-400px);*/
-/*    }*/
-
-/*    80% {*/
-/*        transform: translateY(-20px);*/
-/*        transform: translateY(-20px);*/
-/*    }*/
-/*}*/
 
 .clr{
     width: 79px;
@@ -240,6 +221,11 @@ select.selectOptions {
     body {
         width: 100%;
         margin: 0;
+    }
+    #button{
+        margin: 0;
+        right: 86px;
+        top: -21px;
     }
 
 }

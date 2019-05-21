@@ -1,15 +1,3 @@
-// var obj = document.getElementsByClassName('button')[0]; //timer on button Clear X
-// var time = 5;
-// var timer = setInterval("Start()", 1000);
-// function Start() {
-//     if(time !== 1){
-//         time--;
-//     }
-//     else{
-//         clearInterval(timer);
-//         obj.innerHTML = '<div class="del_li" onclick="del_li()"> <span >&#10006;</span> <span class="clr">Clear all</span> </div>'
-//     }
-// }
 
 function makeEaseOut(timing) {
     return function(timeFraction) {
@@ -31,7 +19,7 @@ function quad(timeFraction) {
 
     var height = button.clientHeight - del_li.clientHeight;
     var width = 100;
-    var left = 41;
+    var left = 59;
     var tp = 27 ;
 
     animate({
